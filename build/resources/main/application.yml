@@ -1,0 +1,18 @@
+server:
+  port: 5000
+spring:
+  application:
+    name: elastic-practice
+  jpa:
+    show-sql: true
+    database: mysql
+    properties:
+      hibernate:
+        '[format_sql]': true
+    database-platform: org.hibernate.dialect.MySQL8Dialect
+    generate-ddl: false
+  datasource:
+    driver-class-name: org.mariadb.jdbc.Driver
+    url: jdbc:mariadb://localhost:3306/menudb
+    username: root
+    password: mariadb
